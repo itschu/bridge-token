@@ -12,13 +12,14 @@ import {
 import BuyButton from "../BuyButton";
 import Image from "next/image";
 import whyImage from "../../public/images/logo.svg";
+import { tokenName } from "../../data";
 
 const WhySection = () => {
 	return (
 		<WhyWrapper>
 			<LeftSection>
 				<NextImage>
-					<Image src={whyImage} />
+					<Image src={whyImage} alt={`${tokenName.fullName} logo`} />
 				</NextImage>
 				<PSol>our solution to the problem.</PSol>
 				<BuyButton

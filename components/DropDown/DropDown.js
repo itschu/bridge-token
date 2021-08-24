@@ -20,7 +20,7 @@ const DropDown = ({ status, toggle }) => {
 			<Wrapper>
 				<Menu>
 					{links.map(({ title, link }, index) => (
-						<Li key={index}>
+						<Li key={index} onClick={() => toggle()}>
 							<a href={link}> {title} </a>
 						</Li>
 					))}

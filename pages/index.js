@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import Head from "../components/Head";
 import Hero from "../components/Hero";
 import WhySection from "../components/WhySection";
@@ -11,7 +10,7 @@ import Footer from "../components/Footer";
 export default function Home() {
 	return (
 		<>
-			<Head currentPage="Home" />
+			<Head currentPage="Home Page" />
 			<Hero />
 			<WhySection />
 			<HowSection />

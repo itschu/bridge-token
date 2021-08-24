@@ -59,5 +59,13 @@ export const footer_news_list = [
 		title: "we participated in the hackathon presented by the Qubators network.",
 		link: "#",
 		img: "/images/hackathon.png",
+		alt: "hackathon logo",
 	},
 ];
+
+export const tokenName = {
+	title: "Bridge Index",
+	fullName: "Bridge Index Token",
+	short: "BDGT",
+	single: "Bridge",
+};

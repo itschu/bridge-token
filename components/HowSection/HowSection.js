@@ -17,7 +17,7 @@ import {
 	P_,
 } from "./styleComp";
 import BuyButton from "../BuyButton";
-import { allCrypto } from "../../data/";
+import { allCrypto, tokenName } from "../../data/";
 import Image from "next/image";
 
 const HowSection = () => {
@@ -60,7 +60,10 @@ const HowSection = () => {
 						/>
 						&nbsp;&nbsp;
 					</Div>
-					<H3> ~ {bridgeEquuvalent} BDGT</H3>
+					<H3>
+						{" "}
+						~ {bridgeEquuvalent} {tokenName.short}
+					</H3>
 				</TopSect>
 				<MidSect>
 					<P_>automatically evalutes to :</P_>
@@ -69,7 +72,12 @@ const HowSection = () => {
 					<Column>
 						{rowOne.map((el, index) => (
 							<Item key={index}>
-								<Image width={25} height={25} src={el.src} />
+								<Image
+									width={25}
+									height={25}
+									src={el.src}
+									alt={`${el.title} logo`}
+								/>
 								<H4> = $130</H4>
 							</Item>
 						))}
@@ -78,7 +86,12 @@ const HowSection = () => {
 					<Column>
 						{rowTwo.map((el, index) => (
 							<Item key={index}>
-								<Image width={25} height={25} src={el.src} />
+								<Image
+									width={25}
+									height={25}
+									src={el.src}
+									alt={`${el.title} logo`}
+								/>
 								<H4> = $130</H4>
 							</Item>
 						))}
@@ -87,7 +100,12 @@ const HowSection = () => {
 					<Column>
 						{rowThree.map((el, index) => (
 							<Item key={index}>
-								<Image width={25} height={25} src={el.src} />
+								<Image
+									width={25}
+									height={25}
+									src={el.src}
+									alt={`${el.title} logo`}
+								/>
 								<H4> = $130</H4>
 							</Item>
 						))}
@@ -96,7 +114,12 @@ const HowSection = () => {
 					<Column>
 						{rowFour.map((el, index) => (
 							<Item key={index}>
-								<Image width={25} height={25} src={el.src} />
+								<Image
+									width={25}
+									height={25}
+									src={el.src}
+									alt={`${el.title} logo`}
+								/>
 								<H4> = $130</H4>
 							</Item>
 						))}

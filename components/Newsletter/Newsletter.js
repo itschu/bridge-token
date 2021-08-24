@@ -83,7 +83,7 @@ const Newsletter = () => {
 			</P>
 			<Email_input>
 				<Input placeholder="your email" />
-				<Submit>
+				<Submit aria-label="Subscribe to newsletter">
 					<RiSendPlane2Fill />
 				</Submit>
 			</Email_input>

@@ -128,7 +128,7 @@ const h3_style = {
 	"font-weight": "900",
 };
 
-export const H3 = styled.h4`
+export const H3 = styled.h3`
 	font-size: 12px;
 	font-weight: 600;
 	color: #000;
@@ -136,7 +136,7 @@ export const H3 = styled.h4`
 	letter-spacing: 2px;
 `;
 
-export const H2 = styled.h3`
+export const H2 = styled.h4`
 	font-weight: 500;
 	line-height: 30px;
 	color: #000;

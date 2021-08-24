@@ -26,6 +26,7 @@ import {
 	footer_tech_list,
 	footer_resources_list,
 	footer_news_list,
+	tokenName,
 } from "../../data";
 import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
@@ -35,7 +36,11 @@ const Footer = () => {
 			<TopSect>
 				<SectOne>
 					<NextLogo>
-						<Image src={logo} layout="fill" />
+						<Image
+							src={logo}
+							layout="fill"
+							alt={`${tokenName.fullName} logo`}
+						/>
 					</NextLogo>
 					<P color="#fff" type="sm-f">
 						The first index fund cryptocurrency here to
@@ -72,7 +77,11 @@ const Footer = () => {
 							<Li key={indx}>
 								<A href={el.link} news="change">
 									<NextNewsImg>
-										<Image src={el.img} layout="fill" />
+										<Image
+											src={el.img}
+											layout="fill"
+											alt={el.alt}
+										/>
 									</NextNewsImg>
 									<P color="#fff" type="news">
 										{el.title}
@@ -88,19 +97,28 @@ const Footer = () => {
 
 			<Copyright>
 				<SocialMedia>
-					<Social href="#">
+					<Social
+						href="#"
+						aria-label={`${tokenName.title} facebook page`}
+					>
 						<FaFacebookF />
 					</Social>
-					<Social href="#">
+					<Social
+						href="#"
+						aria-label={`${tokenName.title} twitter page`}
+					>
 						<FaTwitter />
 					</Social>
-					<Social href="#">
+					<Social
+						href="#"
+						aria-label={`${tokenName.title} linked in page`}
+					>
 						<FaLinkedinIn />
 					</Social>
 				</SocialMedia>
 
 				<P color="#fff" type="copyright">
-					© 2021 Zoe Index. All rights reserved | Created by &nbsp;
+					© 2021 Bridge Index. All rights reserved | Created by &nbsp;
 					<Span>
 						Team Lambano with &nbsp; <Red>❤️</Red>
 					</Span>
